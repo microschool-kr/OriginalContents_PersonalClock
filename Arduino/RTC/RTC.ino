@@ -5,12 +5,13 @@
 uRTCLib rtc(0x68);
 
 // 요일 문자열 배열
-char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+char daysOfTheWeek[7][12] = {"일", "월", "화", "수", "목", "금", "토"};
 
 void setup() {
-	// 시리얼 통신을 초기화하고, 3초간 대기합니다.
+	// 시리얼 통신을 초기화하고, 5초간 대기합니다.
 	Serial.begin(9600);
-	delay(3000); 
+	delay(5000); 
+	Serial.println("Serial 준비 완료");
 
 	// I2C 통신을 초기화합니다.
 	URTCLIB_WIRE.begin();
@@ -22,10 +23,11 @@ void setup() {
 }
 
 void loop() {
+
 	// RTC 모듈의 시간을 읽어와 시리얼 통신으로 출력합니다.
 	rtc.refresh();
 
-	Serial.print("Current Date & Time: ");
+	Serial.print("현재의 날짜와 시간: ");
 	// 년, 월, 일을 출력합니다.
 	Serial.print(rtc.year());
 	Serial.print('/');
