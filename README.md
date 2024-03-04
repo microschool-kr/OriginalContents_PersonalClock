@@ -22,10 +22,10 @@
 
 | [Arduino UNO GPIO](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf) | DS3231 |
 |-----------|------|
-|   D19       | SCL  |
-|   D18      | SDA  |
-|   5V      | VCC |
-|   GND       | GND  |
+|   D19     | SCL  |
+|   D18     | SDA  |
+|   5V      | VCC  |
+|   GND     | GND  |
 
 | [Arduino UNO GPIO](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf) | SSD1306 |
 |-----------|------|
