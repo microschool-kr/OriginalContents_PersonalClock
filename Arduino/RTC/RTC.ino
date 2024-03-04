@@ -5,8 +5,8 @@
 uRTCLib rtc(0x68);
 
 // 요일 문자열 배열
-char daysOfTheWeek[7][12] = {"일", "월", "화", "수", "목", "금", "토"};
-
+//char daysOfTheWeek[7][12] = {"일", "월", "화", "수", "목", "금", "토"};
+char daysOfTheWeek[7][12] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 void setup() {
 	// 시리얼 통신을 초기화하고, 5초간 대기합니다.
 	Serial.begin(9600);
