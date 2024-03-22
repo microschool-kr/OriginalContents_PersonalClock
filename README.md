@@ -19,7 +19,7 @@
 **주의: 점퍼선 연결시 케이블을 제거하고 진행합니다.**
 
 ## 선 작업 
-
+![img](/ppt/img/RTC_Arduino_fritzing.png)
 | [Arduino UNO GPIO](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf) | DS3231 |
 |-----------|------|
 |   D19     | SCL  |
