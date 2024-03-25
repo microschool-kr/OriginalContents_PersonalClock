@@ -43,11 +43,12 @@ The stl files for an enclosure are on thingiverse [here](https://www.thingiverse
     git clone https://
 
 ## 라이브러리  
-1. Library 
-2. Search
-    - [uRTCLib](https://github.com/Naguissa/uRTCLib) 
-3. Install
-
+- [uRTCLib](https://github.com/Naguissa/uRTCLib)  
+    : 간단하나 AM, PM 설정이 안됨  
+- [Arduino-DS3231](https://github.com/jarzebski/Arduino-DS3231)  
+    : 시간 설정이 편함. 라이브러리가 메모리를 많이 차지하므로 우노나 나노에서 실행할 경우에는 수정해야함. 
+- [Adafruit-SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
+    : Adafruit사에서 만든 SSD1306을 위한 라이브러리. 로고가 안보이도록 하려면 몇가지 [수정](https://www.youtube.com/watch?v=0xcp01De9so)이 필요하다.
 ## 컴파일   
 
 1. open
