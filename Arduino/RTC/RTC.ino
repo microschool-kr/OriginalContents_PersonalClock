@@ -4,6 +4,8 @@
 // uRTCLib 클래스의 인스턴스를 생성하고, RTC 모듈의 I2C 주소로 초기화합니다.
 uRTCLib rtc(0x68);
 
+byte rtcModel = URTCLIB_MODEL_DS3231;
+
 // 요일 문자열 배열
 //char daysOfTheWeek[7][12] = {"일", "월", "화", "수", "목", "금", "토"};
 char daysOfTheWeek[7][12] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
@@ -15,6 +17,15 @@ void setup() {
 
 	// I2C 통신을 초기화합니다.
 	URTCLIB_WIRE.begin();
+
+  //rtc 모델을 세팅합니다.
+  rtc.set_model(rtcModel);
+
+  if (rtc.enableBattery()) {
+		Serial.println("코인베터리가 정상 동작 중 입니다. ");
+	} else {
+		Serial.println("코인베티리에 문제가 있습니다.");
+	}
 
 	// RTC 모듈의 시간을 설정합니다.
 	// rtc.set(초, 분, 시, 요일, 일, 월, 년);
