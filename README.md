@@ -43,8 +43,8 @@ The stl files for an enclosure are on thingiverse [here](https://www.thingiverse
 
 
 ## 라이브러리  
-- [uRTCLib](https://github.com/Naguissa/uRTCLib)  
-    : 아두이노의 기본 RTC 기능에 대한 아주 작은 라이브러리입니다. DS1307, DS3231 및 DS3232 RTC가 지원됩니다.   
+- [RTCLib](https://github.com/adafruit/RTClib?tab=readme-ov-file)  
+    : Adafruit사에서 만든 아두이노의 기본 RTC 기능에 대한 라이브러리입니다. DS1307, DS3231 및 PCF8523 지원됩니다.   
 - [Adafruit-SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
     : Adafruit사에서 만든 SSD1306을 위한 라이브러리. 로고가 안보이도록 하려면 몇가지 [수정](https://www.youtube.com/watch?v=0xcp01De9so)이 필요하다.
 ### uRTCLib의 주요 기능 
@@ -55,11 +55,13 @@ The stl files for an enclosure are on thingiverse [here](https://www.thingiverse
 1. display.display()
 2. display.cleardisplay()
 
-# 동작영상 
+# 활용도  
+1. D-day 기능 만들기: 굉장히 오래 전부터 지금까지에 대한 시간
+2. Alarm 기능 만들기: 10초 후에 뭔가 발생하는 것 만들기 
 
-Here's a video outlining how it works and a timelapse of it looking after a plant for a week:
 
-[![Mod demo](https://img.youtube.com/vi/E6wkvTG2Ofs/0.jpg)](https://www.youtube.com/watch?v=E6wkvTG2Ofs "Video Title")
+
+
 
 # 라이센스 
 [GPL 3.0](https://olis.or.kr/license/Detailselect.do?lId=1072&mapCode=010072)
