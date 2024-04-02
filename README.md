@@ -29,8 +29,8 @@
 
 | [Arduino UNO GPIO](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf) | SSD1306 |
 |-----------|------|
-|   A5      | SCL  |
-|   A4      | SDA  |
+|   D19     | SCL  |
+|   D18     | SDA  |
 |   5V      | VCC  |
 |   GND     | GND  |
 
@@ -38,24 +38,22 @@
 
 The stl files for an enclosure are on thingiverse [here](https://www.thingiverse.com/thing:6125748) (Thanks Ryan!).
 
-# 코드 다운로드 
+# 순서도
+[![](https://mermaid.ink/img/pako:eNptUj9PwkAU_yqXNxdCS8H2BhIDDiYaE3UyXRp6QhO4YmkTkZA4EEPEgQEjGiAMGBdNUMC4-IW44zt40BIVuKG9e78_92vfq0LWsQhgKJMLn9AsydhmzjWLBkVilUzXs7N2yaQe2nUt36bOJnB8mt4sHh3sZQwa1INnqI-kUkKA0b6SRvObKW8O1uGF9C-OVj5rDvNOnfdfEW92Z6M64oN7Np6I1zXvPwd8wRLcUIUXR8QfWiGFtbrr0t737Gu0uqzgOCUk80mDvTRYc4jYqMPG061BlsaB1Wz0vkjMn9r8421riv-phev8sbP9D7B2m98O5-07Nmjw3mQZPQz82WWD8CMJtQwKEhSJWzRtS3SyugAM8PKkSAzAYluwc17eAIPWBNH0PeekQrOAPdcnEvgly_RWbQd8bhbKokos23Pcw2A2liMigWjsmeP8csQZcBUuAcu6HtU0VdUUNSkruqJrElQAR2RZjcoJRY8lkrqaVNX4Tk2Cq6WHHI3H5ZhYWjKhJgRa-wEsOP1j?type=png)](https://mermaid.live/edit#pako:eNptUj9PwkAU_yqXNxdCS8H2BhIDDiYaE3UyXRp6QhO4YmkTkZA4EEPEgQEjGiAMGBdNUMC4-IW44zt40BIVuKG9e78_92vfq0LWsQhgKJMLn9AsydhmzjWLBkVilUzXs7N2yaQe2nUt36bOJnB8mt4sHh3sZQwa1INnqI-kUkKA0b6SRvObKW8O1uGF9C-OVj5rDvNOnfdfEW92Z6M64oN7Np6I1zXvPwd8wRLcUIUXR8QfWiGFtbrr0t737Gu0uqzgOCUk80mDvTRYc4jYqMPG061BlsaB1Wz0vkjMn9r8421riv-phev8sbP9D7B2m98O5-07Nmjw3mQZPQz82WWD8CMJtQwKEhSJWzRtS3SyugAM8PKkSAzAYluwc17eAIPWBNH0PeekQrOAPdcnEvgly_RWbQd8bhbKokos23Pcw2A2liMigWjsmeP8csQZcBUuAcu6HtU0VdUUNSkruqJrElQAR2RZjcoJRY8lkrqaVNX4Tk2Cq6WHHI3H5ZhYWjKhJgRa-wEsOP1j)
 
-    git clone https://
 
 ## 라이브러리  
 - [uRTCLib](https://github.com/Naguissa/uRTCLib)  
-    : 간단하나 AM, PM 설정이 안됨  
-- [Arduino-DS3231](https://github.com/jarzebski/Arduino-DS3231)  
-    : 시간 설정이 편함. 라이브러리가 메모리를 많이 차지하므로 우노나 나노에서 실행할 경우에는 수정해야함. 
+    : 아두이노의 기본 RTC 기능에 대한 아주 작은 라이브러리입니다. DS1307, DS3231 및 DS3232 RTC가 지원됩니다.   
 - [Adafruit-SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
     : Adafruit사에서 만든 SSD1306을 위한 라이브러리. 로고가 안보이도록 하려면 몇가지 [수정](https://www.youtube.com/watch?v=0xcp01De9so)이 필요하다.
-## 컴파일   
+### uRTCLib의 주요 기능 
+1. rtc.set()
+2. rtc.refresh() 
 
-1. open
-2. compile
-
-## 업로드  
-1. upload
+### Adafuit_SSD1306의 주요 기능  
+1. display.display()
+2. display.cleardisplay()
 
 # 동작영상 
 
